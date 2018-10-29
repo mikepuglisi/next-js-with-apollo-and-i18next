@@ -1,3 +1,10 @@
+## Purpose
+
+Repo set up to demonstrate a problem when merging NextJS with-apollo example and with-i18next example.
+
+When NamespacesConsumer and ApolloProvider are both utilized in _app.js, server side rendering of the Apollo query no longer occurs. You will see the "Loading..." text before the graphql data is presented which indicates that the data is beiung loaded and rendered client side.
+
+---------------
 [![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/zeit/next.js/tree/master/examples/with-apollo)
 # Apollo Example
 
