@@ -67,7 +67,7 @@ class MyApp extends App {
                 Change locale
               </button>
               <ApolloProvider client={apolloClient}>
-              <Component {...pageProps} />
+                <Component {...pageProps} />
               </ApolloProvider>
             </React.Fragment>
           )}
