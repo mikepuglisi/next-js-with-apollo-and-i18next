@@ -48,6 +48,7 @@ class MyApp extends App {
 
     return (
       <Container>
+        <ApolloProvider client={apolloClient}>
         <NamespacesConsumer
           {...pageProps}
           ns="common"
@@ -66,12 +67,12 @@ class MyApp extends App {
               >
                 Change locale
               </button>
-              <ApolloProvider client={apolloClient}>
+
                 <Component {...pageProps} />
-              </ApolloProvider>
             </React.Fragment>
           )}
         </NamespacesConsumer>
+        </ApolloProvider>
       </Container>
     );
   }
